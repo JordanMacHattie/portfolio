@@ -1,7 +1,9 @@
 {
   "extends": "../../tsconfig.base.json",
   "files": [],
-  "include": [],
+  "include": [
+    "src/**/*.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.app.json"
@@ -11,6 +13,11 @@
     }
   ],
   "compilerOptions": {
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@user/*": ["apps/my-backend/src/user/*"],
+      "@database/*": ["apps/my-backend/src/database/*"]
+    }
   }
 }
