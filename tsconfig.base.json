@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@user/*": ["apps/api/src/user/*"],
-      "@database/*": ["apps/api/src/database/*"],
+      "@user/*": ["apps/my-backend/src/user/*"],
+      "@database/*": ["apps/my-backend/src/database/*"],
     }
   },
   "exclude": ["node_modules", "tmp"]

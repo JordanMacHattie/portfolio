@@ -16,8 +16,8 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "@user/*": ["apps/my-backend/src/user/*"],
-      "@database/*": ["apps/my-backend/src/database/*"]
+      "@user/*": ["src/user/*"],
+      "@database/*": ["src/database/*"]
     }
   }
 }
