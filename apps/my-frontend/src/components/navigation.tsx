@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-//TODO css
 
 const Navigation: React.FC = () => {
   return (
