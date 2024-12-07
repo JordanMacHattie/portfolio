@@ -1,13 +1,21 @@
 // import NxWelcome from './nx-welcome';
-import HomePage from './home-page';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Navigation from "../components/navigation";
+import Home from '../pages/home';
+import About from '../pages/about';
+import Other from '../pages/other';
 
-import { Route, Routes, Link } from 'react-router-dom';
-
-export function App() {
+const App: React.FC = () => {
   return (
-    <div>
-      <HomePage></HomePage>
-    </div>
+    <>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/other" element={<Other />} />
+      </Routes>
+    </>
   );
 }
 
