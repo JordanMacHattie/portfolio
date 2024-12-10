@@ -16,6 +16,11 @@ const Navigation: React.FC = () => {
           </Link>
         </li>
         <li className="nav-item">
+          <Link to="/resume" className="nav-link">
+            Resume
+          </Link>
+        </li>
+        <li className="nav-item">
           <Link to="/other" className="nav-link">
             Other
           </Link>
