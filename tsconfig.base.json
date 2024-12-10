@@ -17,7 +17,8 @@
     "paths": {
       "@user/*": ["apps/my-backend/src/user/*"],
       "@database/*": ["apps/my-backend/src/database/*"],
-    }
+    },
+    "resolveJsonModule": true,
   },
   "exclude": ["node_modules", "tmp"]
 }
