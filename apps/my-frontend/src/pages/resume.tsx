@@ -14,13 +14,33 @@ const Resume = () => {
 
   return (
     <div>
-        <button onClick={toggleRole}>
-            {role} toggle
-        </button>
+      <button onClick={toggleRole}>
+          {role} toggle
+      </button>
 
-        <p>
-            {/* {resumeData} */}
-        </p>
+      <div>
+        <h1>
+          {resumeData.name}
+        </h1>
+        <ul>
+          <li>{resumeData.location}</li>
+          <li>{resumeData.contact.LinkedIn}</li>
+          <li>{resumeData.contact.GitHub}</li>
+        </ul>
+      </div>
+
+      <p>{resumeData.profile}</p>
+      <ul>
+        {resumeData.professional_experience.map((job:Array, index:number) => (
+          <li key={index}>
+            <p>{job.title}</p>
+            <p>{job.company}</p>
+            <p>{job.dates}</p>
+            <p>{job.summary}</p>
+            <p>{job.key_achievements}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
